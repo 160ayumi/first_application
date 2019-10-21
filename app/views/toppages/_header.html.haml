@@ -4,11 +4,13 @@
       title
     .header__box__btn-box.flex
       .header__box__btn-box__icon
-        user
+        =link_to "user"
       .header__box__btn-box__icon
-        text
+        =link_to toppages_new_path do
+          tweet
       .header__box__btn-box__icon
-        picture
+        =link_to pictures_new_path do
+          pictue
       .header__box__btn-box__icon
         UP
 %footer
