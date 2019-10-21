@@ -14,7 +14,6 @@ z-index: 5;
 .header__box{
   width: 80%;
   height: 80px;
-  background: pink;
   position: absolute;
   top:10px;
   left: 10%;
@@ -22,7 +21,6 @@ z-index: 5;
 
 .header__box__title{
 text-emphasis: none;
-background: mediumslateblue;
 height: 60px;
 width: 40%;
 position: absolute;
@@ -30,11 +28,13 @@ position: absolute;
 font-size: 40px;
 line-height: 60px;
 float: left;
+letter-spacing: 0.15em;
+font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
 }
 .header__box__btn-box{
 width: 30%;
 height: 60px;
-background: mediumslateblue;
+
 float: right;
 margin-top: 10px;
 
