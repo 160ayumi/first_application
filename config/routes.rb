@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get   'toppages/new'  =>  'toppages#new'       #ツイート投稿画面
   post  'toppages'      =>  'toppages#create'    #ツイート投稿機能
   get   'pictures/new'  =>  'pictures#new'
+  post  'pictures'      =>  'pictures#create'
 end

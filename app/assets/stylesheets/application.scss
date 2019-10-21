@@ -2,6 +2,11 @@
 .flex{
   display: flex;
 }
+a{
+  color: orange;
+  text-decoration: none;
+  
+}
 @import "header";
 @import "contents";
 @import "modules/new";
