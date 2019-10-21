@@ -34,8 +34,8 @@ Things you may want to cover:
 
 
 ### Association
-- has_many :tweets
-  
+has_many :tweets
+has_many :pictures
 
 ## tweetsテーブル
 
@@ -45,7 +45,7 @@ Things you may want to cover:
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :user
+belongs_to :user
 
 ## picturesテーブル
 
@@ -54,7 +54,7 @@ Things you may want to cover:
 |image|text||
 
 ### Association
-
+belongs_to :user
 
 
 
