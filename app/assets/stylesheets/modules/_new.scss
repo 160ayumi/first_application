@@ -9,13 +9,15 @@ background: white;
 }
 .content_name{
 
-height: 70px;
-width: 50%;
+height: 130px;
+width: 40%;
 margin: 50px auto;
-background: palevioletred;
-border: 2px solid palevioletred;
-  border-radius: 5px;
+// background: palevioletred;
+// border: 2px solid palevioletred;
+// border-radius: 5px;
+
 }
+
 .content_text{
   overflow: scroll;
   height: 300px;
@@ -44,3 +46,4 @@ border-radius: 20px;
   border: 10px solid lightskyblue;
   border-radius: 5px;
 }
+
