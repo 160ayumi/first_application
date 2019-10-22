@@ -10,6 +10,12 @@ class ToppagesController < ApplicationController
   def create
     Tweet.create(tweet_params)
   end
+
+  def edit
+  end
+
+  def update
+  end
   private
   def tweet_params
     params.permit(:text)
