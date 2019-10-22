@@ -9,7 +9,7 @@ max-width: 80%;
 
 .pictuers{
 height: 450px;
-border: 20px solid olive;
+border: 20px solid powderblue;
 }
 
 .posts{
@@ -20,17 +20,17 @@ border: 20px solid olive;
 .post-box{
 height: 100px;
 width: 80%;
-background: #4D9BE8;
+background: cadetblue;
 position: absolute;
 top: 20px;
 left: 10%;
 border-radius: 5px;
-border: 2px solid #4D9BE8;
+border: 2px solid cadetblue;
 
 &__left{
   height: 100px;
   width: 100px;
-  background: #4D9BE8;
+  background: cadetblue;
   color: white;
   line-height: 100px;
   text-align: center;
