@@ -1,22 +1,16 @@
 .header
   .header__box
     .header__box__title
-      =link_to toppages_path do
+      =link_to tweets_path do
         title
     .header__box__btn-box.flex
       .header__box__btn-box__icon
-<<<<<<< Updated upstream
-        = link_to  edit_user_registration_path do
-          =image_tag'user.png'
-=======
         = link_to edit_user_registration_path(current_user) do 
           = image_tag'user.png'
->>>>>>> Stashed changes
-          
       .header__box__btn-box__icon
-        =link_to toppages_new_path do
-          =image_tag'text.png',size: "60*60"
+        =link_to tweets_new_path do
+          =image_tag'text.png'
       .header__box__btn-box__icon
         =link_to pictures_new_path do
-          =image_tag'picture.png',size: "60*60"
+          =image_tag'picture.png'
 %footer

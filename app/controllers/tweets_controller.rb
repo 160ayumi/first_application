@@ -1,5 +1,4 @@
-class ToppagesController < ApplicationController
-
+class TweetsController < ApplicationController
   def index
     @tweets = Tweet.all
   end
@@ -22,4 +21,5 @@ class ToppagesController < ApplicationController
   end
 
   
+
 end
