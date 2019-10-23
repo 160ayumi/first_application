@@ -9,4 +9,5 @@ root to: 'toppages#index'
   post  'pictures'      =>  'pictures#create'
   get   'toppages/edit'  =>  'toppages#edit'
   get   'users/:id'   =>  'users#show'
+  # resources :users, only: [:edit, :update]
 end
