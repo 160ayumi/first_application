@@ -1,13 +1,16 @@
 class TweetsController < ApplicationController
+  before_action  except: :index
   def index
-    @tweets = Tweet.all
+    @tweet= Tweet.all
   end
 
   def new
+    @tweet = Tweet.new
   end
   
   def create
-    Tweet.create(tweet_params)
+    Tweet.create(text: tweet_params[:text], user_id: current_user.id)
+    redirect_to root_path
   end
 
   def edit
@@ -16,9 +19,13 @@ class TweetsController < ApplicationController
   def update
   end
   private
+  
   def tweet_params
-    params.permit(:text)
+    params.require(:tweet).permit(:text)
   end
+  # def move_to_index
+  #   redirect_to action: :index unless user_signed_in?
+  # end
 
   
 

@@ -3,6 +3,10 @@
 .content_new
   .content_name
     = image_tag 'new_name.png'
-  .content_text
-  .text_submit-btn
-    =link_to "btn"
+  = form_with(model: Tweet.new, local: true) do |f|
+    .content_text
+      = f.text_area :text
+    .text_submit-btn
+      = f.submit
+
+   
