@@ -9,5 +9,6 @@ root to: 'tweets#index'
   post  'pictures'      =>  'pictures#create'
   get   'tweets/edit'  =>  'tweets#edit'
   get   'users/:id'   =>  'users#show'
-  # resources :users, only: [:edit, :update]
+  # # resources :users, only: [:edit, :update]
+  
 end

@@ -5,7 +5,7 @@
         title
     .header__box__btn-box.flex
       .header__box__btn-box__icon
-        = link_to edit_user_registration_path(current_user) do 
+        = link_to destroy_user_session_path , method: :delete do
           = image_tag'user.png'
       .header__box__btn-box__icon
         =link_to tweets_new_path do

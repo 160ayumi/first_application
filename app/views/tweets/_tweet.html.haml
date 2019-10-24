@@ -2,5 +2,6 @@
   .post-box__left
     ●
   .post-box__text
-    = tweet.text
-  .pagination
+    =link_to tweets_edit_path do
+      = tweet.text
+    
