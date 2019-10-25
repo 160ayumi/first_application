@@ -1,10 +1,15 @@
 .wrapper{
-  margin: 10% 45%;
+  position: relative;
+  margin-top: 100px;
+
 }
+
 h2{
   font-size: 16px;
     font-weight: 600;
     color: #00336D;
+    position: absolute;
+    left: 40%;
 }
 .field{
   padding-top: 30px;
@@ -13,4 +18,17 @@ label{
   font-size: 16px;
     font-weight: 600;
     color: #00336D;
+}
+.login_form{
+  position: absolute;
+  top: 30%;
+  left: 47%;
+  padding-top: 30px;
+}
+.login_image{
+  float: left;
+  position: absolute;
+  top: 80px;
+  left: 35%;
+
 }

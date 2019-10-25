@@ -1,18 +1,21 @@
 .wrapper
   %h2 ログインして下さい
-  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-    .field
-      = f.label :email
-      %br/
-      = f.email_field :email, autofocus: true, autocomplete: "email"
-    .field
-      = f.label :パスワード
-      %br/
-      = f.password_field :password, autocomplete: "current-password"
-    - if devise_mapping.rememberable?
+  .login_image
+    =image_tag 'user.png'
+  .login_form
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .field
-        = f.check_box :remember_me
-        = f.label :記憶
-    .actions
-      = f.submit "ログイン"
-  = render "devise/shared/links"
+        = f.label :email
+        %br/
+        = f.email_field :email, autofocus: true, autocomplete: "email"
+      .field
+        = f.label :パスワード
+        %br/
+        = f.password_field :password, autocomplete: "current-password"
+      - if devise_mapping.rememberable?
+        .field
+          = f.check_box :remember_me
+          = f.label :記憶
+      .actions
+        = f.submit "ログイン"
+    = render "devise/shared/links"

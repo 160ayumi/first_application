@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
   before_action  except: :index
   def index
-    @tweet= Tweet.all
+    @tweet= Tweet.order("created_at DESC").page(params[:page]).per(10)
   end
 
   def new
