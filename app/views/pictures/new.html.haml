@@ -3,12 +3,11 @@
 .content_new
   .content_name
     = image_tag 'picture_name.png'
-  .content_picture
-    %textarea.text-field{:name => "name", :type => "text"}
-  .text_submit-btn
-    =link_to "btn"
-  .text_submit-btn
-    =link_to "btn"
+  =form_for(@picture) do |f|
+    .content_picture
+      =f.file_field :image ,class: 'image_field'
+    .text_submit-btn
+      = f.submit "SEND",class:'image_submit'
       
 
 

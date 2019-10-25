@@ -32,19 +32,21 @@ margin: 50px auto;
 height: 70px;
 width: 15%;
 margin: 50px auto;
-background: palevioletred;
-border: 2px solid palevioletred;
-border-radius: 20px;
+// background: palevioletred;
+// border: 2px solid palevioletred;
+// border-radius: 20px;
 
 }
 .content_picture{
   overflow: scroll;
-  height: 100px;
-  width: 60%;
+  height: 50px;
+  width: 50%;
   background: white;
   margin: 0 auto ;
   border: 10px solid peru;
   border-radius: 5px;
+  line-height: 50px;
+  margin: 0 auto;
 }
 .content_text_edit{
   overflow: scroll;
@@ -56,3 +58,12 @@ border-radius: 20px;
   border-radius: 5px;
 }
 
+.image_field{
+  margin: 0 160px;
+}
+.text_submit{
+  margin: 0 30%;
+}
+.image_submit{
+  margin: 0 46%;
+}

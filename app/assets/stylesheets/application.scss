@@ -15,11 +15,12 @@ img{
 @import "header";
 @import "contents";
 @import "modules/new";
-// @import "modules/user";
+@import "modules/user";
 
 textarea{
   border: 0px solid #d8d8d8;
   border-radius: 3px;
   height: 100%;
+  box-sizing: border-box;
   width: 100%;
 }

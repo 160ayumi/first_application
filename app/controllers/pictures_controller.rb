@@ -8,7 +8,7 @@ class PicturesController < ApplicationController
   end
   
   def create
-    Picture.create(image: picture_params[:image], user_id: current_user.id)
+    Picture.create(image: picture_params[:image])
     redirect_to root_path
   end
   private
