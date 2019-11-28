@@ -3,7 +3,7 @@
 .contents
   .pictures
     .picture
-      = image_tag @picture.first.image.url
+      = image_tag @picture.last.image.url
   .posts
     =render @tweet
     .paginate

@@ -6,10 +6,7 @@
   = form_with(model: @picture, local: true) do |f|
     .content_picture
       =f.file_field :image ,class: 'image_field'
+      - if @picture.errors.any?
+        = render 'layouts/picture_error'
     .text_submit-btn
       = f.submit "SEND",class:'image_submit'
-      
-
-
-
-
