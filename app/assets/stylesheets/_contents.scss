@@ -1,6 +1,5 @@
 .contents{
 height: 100vh;
-overflow: scroll;
 margin: 0 auto;
 padding-top: 100px;
 position: relative;
@@ -8,11 +7,7 @@ max-width: 80%;
 padding-bottom: 70px;
 }
 
-.pictuers{
-height: 450px;
-border: 20px solid powderblue;
-}
-.pictuer{
+.picture{
   height: 100%;
   width: 100%;
 }
