@@ -1,10 +1,10 @@
 .header
   = render 'header'
 .contents
-  .pictuers
+  .pictures
     .picture
-      = image_tag(pictures_url)
+      = image_tag @picture.first.image.url
   .posts
     =render @tweet
     .paginate
-      =paginate(@tweet)
+      = paginate(@tweet)

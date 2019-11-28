@@ -1,6 +1,6 @@
 class PicturesController < ApplicationController
   def index
-    @picture = Picture.all
+    
   end
 
   def new
@@ -8,8 +8,18 @@ class PicturesController < ApplicationController
   end
   
   def create
-    Picture.create(image: picture_params[:image])
-    redirect_to root_path
+    @picture = Picture.create(picture_params)
+    # binding.pry
+    # if @picture.save
+    #   flash[:image] = "写真を登録しました"
+      redirect_to root_path
+
+    # # インスタンスの保存に失敗した場合の処理
+    # else
+    #   render :new
+    # end
+ 
+
   end
   private
   

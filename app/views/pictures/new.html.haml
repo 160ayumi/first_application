@@ -3,7 +3,7 @@
 .content_new
   .content_name
     = image_tag 'picture_name.png'
-  =form_for(@picture) do |f|
+  = form_with(model: @picture, local: true) do |f|
     .content_picture
       =f.file_field :image ,class: 'image_field'
     .text_submit-btn
