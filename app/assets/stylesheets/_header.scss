@@ -31,6 +31,10 @@ float: left;
 letter-spacing: 0.15em;
 font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
 }
+a.title:hover{
+  opacity: 0.6;
+  color: cadetblue;
+}
 .header__box__btn-box{
 width: 30%;
 height: 60px;
@@ -63,3 +67,12 @@ footer{
   cursor: pointer;
   transform: scale(1.1, 1.1);
  }
+ .text_png:hover{
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+ }
+ .picture_png:hover{
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+ }
+ 
