@@ -1,16 +1,16 @@
 .header
   .header__box
     .header__box__title
-      =link_to tweets_path do
+      =link_to tweets_path ,class: 'title'do
         l i s t
     .header__box__btn-box.flex
       .header__box__btn-box__icon
         = link_to destroy_user_session_path , method: :delete do
-          = image_tag'user.png',class: 'user_png'
+          = image_tag'user.png', class: 'user_png'
       .header__box__btn-box__icon
         =link_to tweets_new_path do
-          =image_tag'text.png'
+          =image_tag'text.png', class: 'text_png'
       .header__box__btn-box__icon
         =link_to pictures_new_path do
-          =image_tag'picture.png'
+          =image_tag'picture.png', class: 'picture_png'
 %footer
