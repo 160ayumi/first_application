@@ -7,7 +7,9 @@
     .content_text_edit
       = f.text_area :text
     .text_submit-btn
-      = f.submit "編集する",class:'text_submit'
+      = f.submit "編集する", class:'text_submit'
+    .text_submit-btn
+      = link_to "削除する", "/tweets/#{@tweet.id}", method: :delete
     
 
 
