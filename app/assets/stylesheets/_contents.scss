@@ -1,5 +1,4 @@
 .contents{
-height: 100vh;
 margin: 0 auto;
 padding-top: 100px;
 position: relative;
@@ -12,19 +11,20 @@ padding-bottom: 70px;
   width: 100%;
 }
 .posts{
-  height: 100vh;
   background: white;
   position: relative;
 }
+
 .post-box:hover{
 transform: scale(1.1, 1.1);
 filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
 }
+
 .post-box{
 height: 220px;
 width: 80%;
 background: cadetblue;
-margin-top: 10px;
+margin-top: 20px;
 border-radius: 10px;
 border: 2px solid cadetblue;
 margin-left: 10%;

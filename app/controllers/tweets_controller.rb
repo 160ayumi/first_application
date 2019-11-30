@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :set_params, only:[:edit, :update]
+  before_action :set_params, only:[:edit, :update, :destroy]
 
   def index
     @picture = Picture.all
@@ -24,6 +24,11 @@ class TweetsController < ApplicationController
     # end
 
     @tweet.update(tweet_params)
+    redirect_to root_path
+  end
+
+  def destroy
+    @tweet.destroy
     redirect_to root_path
   end
 
