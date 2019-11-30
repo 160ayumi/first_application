@@ -16,8 +16,12 @@ padding-bottom: 70px;
   background: white;
   position: relative;
 }
+.post-box:hover{
+transform: scale(1.1, 1.1);
+filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+}
 .post-box{
-height: 100px;
+height: 220px;
 width: 80%;
 background: cadetblue;
 margin-top: 10px;
@@ -38,15 +42,13 @@ margin-left: 10%;
   border-radius: 10px;
 }
 &__text{
-  height: 80px;
+  height: 200px;
   width: calc(100% - 140px);
   background: white;
-  float: left;
   border: 2px solid white;
   border-radius: 5px;
-  line-height: 80px;
   margin-top: 8px;
-  font-size: 30px;
+  font-size: 18px;
   font-family: cursive;
   overflow: scroll;
 }
