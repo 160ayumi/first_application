@@ -10,11 +10,12 @@ class TweetsController < ApplicationController
   end
   
   def create
-    Tweet.create(text: tweet_params[:text], user_id: current_user.id)
+    @tweet = Tweet.create(text: tweet_params[:text], user_id: current_user.id)
     redirect_to root_path
   end
 
   def edit
+    @tweet = Tweet.find(params[:id])
   end
 
   def update
