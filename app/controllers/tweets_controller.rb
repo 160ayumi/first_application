@@ -1,5 +1,6 @@
 class TweetsController < ApplicationController
-  before_action  except: :index
+  before_action :set_params, only:[:edit, :update]
+  
   def index
     @picture = Picture.all
     @tweet= Tweet.order("created_at DESC").page(params[:page]).per(10)
@@ -15,7 +16,6 @@ class TweetsController < ApplicationController
   end
 
   def edit
-    @tweet = Tweet.find(params[:id])
   end
 
   def update
@@ -29,6 +29,9 @@ class TweetsController < ApplicationController
   #   redirect_to action: :index unless user_signed_in?
   # end
 
+  def set_params
+    @tweet = Tweet.find(params[:id])
+  end
   
 
 end
