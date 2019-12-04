@@ -1,3 +1,7 @@
 $(function() {
-  $('.slick').slick();
+  $('.slick').slick({
+      dots: true,
+      autoplay: true,
+
+  });
 });
