@@ -3,9 +3,10 @@
 .contents
   .pictures
     .picture.slick
-      = image_tag @picture[0].image.url
-      = image_tag @picture[1].image.url
-      = image_tag @picture[2].image.url
+      = image_tag @picture[-1].image.url
+      = image_tag @picture[-2].image.url
+      = image_tag @picture[-3].image.url
+      = image_tag @picture[-4].image.url
   .posts
     =render @tweet
     .paginate
