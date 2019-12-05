@@ -53,6 +53,7 @@ margin-left: 10%;
   overflow: scroll;
   }
 }
+
 .post_current-box{
   height: 220px;
   width: 80%;
@@ -75,6 +76,12 @@ margin-left: 10%;
     border-radius: 10px;
     }
   }
+
+  .post_current-box:hover{
+    transform: scale(1.1, 1.1);
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  }
+
 .paginate{
   position: absolute;
   left: 40%;
