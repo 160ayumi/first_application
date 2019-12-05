@@ -53,7 +53,28 @@ margin-left: 10%;
   overflow: scroll;
   }
 }
-
+.post_current-box{
+  height: 220px;
+  width: 80%;
+  background: pink;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid pink;
+  margin-left: 10%;
+  
+  
+  &__left{
+    height: 100px;
+    width: 100px;
+    background: pink;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    float: left;
+    border-radius: 10px;
+    }
+  }
 .paginate{
   position: absolute;
   left: 40%;
