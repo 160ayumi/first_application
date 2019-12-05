@@ -54,6 +54,34 @@ margin-left: 10%;
   }
 }
 
+.post_current-box{
+  height: 220px;
+  width: 80%;
+  background: rosybrown;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid rosybrown;
+  margin-left: 10%;
+  
+  
+  &__left{
+    height: 100px;
+    width: 100px;
+    background: rosybrown;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    float: left;
+    border-radius: 10px;
+    }
+  }
+
+  .post_current-box:hover{
+    transform: scale(1.1, 1.1);
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  }
+
 .paginate{
   position: absolute;
   left: 40%;

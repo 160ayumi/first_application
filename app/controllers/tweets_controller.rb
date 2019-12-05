@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :set_params, only:[:edit, :update, :destroy]
+  before_action :set_params, only:[:show, :edit, :update, :destroy]
 
   def index
     @picture = Picture.all
@@ -14,32 +14,32 @@ class TweetsController < ApplicationController
     @tweet = Tweet.create(text: tweet_params[:text], user_id: current_user.id)
     redirect_to root_path
   end
+  
+  def show
+  end
 
   def edit
   end
 
   def update
-    # if @tweet.user_id == current_user.id
-    #   @tweet.update(tweet_params)
-    # end
-
-    @tweet.update(tweet_params)
+    if @tweet.user_id == current_user.id
+      @tweet.update(tweet_params)
+    end
     redirect_to root_path
   end
 
   def destroy
-    @tweet.destroy
+    if @tweet.user_id == current_user.id
+      @tweet.destroy
+    end
     redirect_to root_path
   end
 
   private
   
   def tweet_params
-    params.require(:tweet).permit(:text)
+    params.require(:tweet).permit(:text).merge(user_id: current_user.id)
   end
-  # def move_to_index
-  #   redirect_to action: :index unless user_signed_in?
-  # end
 
   def set_params
     @tweet = Tweet.find(params[:id])

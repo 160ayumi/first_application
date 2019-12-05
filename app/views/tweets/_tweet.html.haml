@@ -1,7 +1,15 @@
-.post-box
-  =link_to "/tweets/#{tweet.id}/edit" do
-    .post-box__left
-      ●
-    .post-box__text
-      = simple_format(tweet.text)
-      
+-if current_user.id == tweet.user_id
+  .post_current-box
+    =link_to "/tweets/#{tweet.id}/edit" do
+      .post_current-box__left
+        ●
+      .post-box__text
+        = simple_format(tweet.text)
+-else
+  .post-box
+    =link_to "/tweets/#{tweet.id}/edit" do
+      .post-box__left
+        ●
+      .post-box__text
+        = simple_format(tweet.text)
+        
