@@ -12,7 +12,11 @@ class TweetsController < ApplicationController
   
   def create
     @tweet = Tweet.create(text: tweet_params[:text], user_id: current_user.id)
-    redirect_to root_path
+    if @tweet.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
   
   def show

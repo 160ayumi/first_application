@@ -6,6 +6,8 @@
   = form_with(model: @tweet, local: true) do |f|
     .content_text
       = f.text_area :text
+    - if @tweet.errors[:text].any?
+      = render "layouts/text_error"
     .text_submit-btn
       = f.submit "投稿する",class:'text_submit'
 
