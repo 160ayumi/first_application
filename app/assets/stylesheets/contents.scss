@@ -23,17 +23,17 @@ filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
 .post-box{
 height: 220px;
 width: 80%;
-background: cadetblue;
+background: rgb(134, 173, 173);
 margin-top: 20px;
 border-radius: 10px;
-border: 2px solid cadetblue;
+border: 2px solid rgb(134, 173, 173);
 margin-left: 10%;
 
 
 &__left{
   height: 100px;
   width: 100px;
-  background: cadetblue;
+  background: rgb(134, 173, 173);
   color: white;
   line-height: 100px;
   text-align: center;
@@ -58,17 +58,17 @@ margin-left: 10%;
 .post_current-box{
   height: 220px;
   width: 80%;
-  background: rosybrown;
+  background: rgb(219, 181, 181);
   margin-top: 20px;
   border-radius: 10px;
-  border: 2px solid rosybrown;
+  border: 2px solid rgb(219, 181, 181);
   margin-left: 10%;
   
   
   &__left{
     height: 100px;
     width: 100px;
-    background: rosybrown;
+    background: rgb(219, 181, 181);
     color: white;
     line-height: 100px;
     text-align: center;
@@ -87,4 +87,7 @@ margin-left: 10%;
   position: absolute;
   left: 40%;
   padding-bottom: 150px;
+}
+.current{
+  color: dimgray;
 }
