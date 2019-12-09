@@ -29,6 +29,10 @@
         cursor: pointer;
         cursor: hand;
     }
+
+    &.draggable{
+        
+    }
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
@@ -37,6 +41,12 @@
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+
+    img {
+        height: 600px;
+        margin: 0 auto;
+        object-fit: contain;
+    }
 }
 
 .slick-track {
