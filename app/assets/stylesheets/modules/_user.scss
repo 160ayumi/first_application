@@ -10,6 +10,9 @@
 .border-top{
   border-bottom: 5px dashed lightpink;
 }
+.border-top_sign-up{
+  border-bottom: 5px dashed lightskyblue;
+}
 
 h2{
   margin: 0 40% 10px;
@@ -21,6 +24,10 @@ h2{
 
 .login-box{
   margin: 80px 300px;
+}
+
+.sign-up-box{
+  margin: 80px 440px;
 }
 
 .login_image{
@@ -42,4 +49,8 @@ label{
 
 .border-bottom{
   border-bottom: 5px dashed lightpink;
+}
+
+.border-bottom_sign-up{
+  border-bottom: 5px dashed lightskyblue;
 }
