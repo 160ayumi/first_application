@@ -12,9 +12,6 @@ background: white;
 height: 130px;
 width: 40%;
 margin: 50px auto;
-// background: palevioletred;
-// border: 2px solid palevioletred;
-// border-radius: 5px;
 
 }
 
@@ -31,13 +28,6 @@ margin: 50px auto;
 textarea{
   height: 100%;
   width: 100%;
-  resize: none;
-}
-
-.field_with_errors{
-  height: 100%;
-  width: 100%;
-  resize: none;
 }
 
 .text_submit-btn{
@@ -115,3 +105,4 @@ margin: 50px auto;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   background-image: linear-gradient(#fed6e3 0%, #ffbcbc 100%);/*グラデーションを明るく*/
 }
+

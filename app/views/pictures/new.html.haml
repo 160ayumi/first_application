@@ -6,9 +6,13 @@
   %label
     = form_with(model: @picture, local: true) do |f|
       .content_picture
-        = image_tag 'picture.png', class: 'field-image'
-        =f.file_field :image ,class: 'image_field'
-        %p クリックして画像を投稿してください
+        #img_field{onclick: "$('#file').click()"}
+          -if @picture.image.url.present?
+            =image_tag(@picture.image.url)
+          -else
+            = image_tag 'picture.png', class: 'field-image'
+            %p クリックして画像を投稿してください
+        =f.file_field :image ,class: 'image_field',id: 'file'
       - if @picture.errors[:image].any? 
         = render 'layouts/picture_error'
       .text_submit-btn
