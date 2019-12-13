@@ -57,8 +57,20 @@ margin: 50px auto;
   border-radius: 5px;
   line-height: 50px;
   margin: 0 auto;
-  background: lightblue;
+  background: rgb(198, 230, 241);
   border: 5px dashed whitesmoke;
+  p{
+    color: azure;
+    display: inline-block;
+    margin-left: 150px;
+  }
+
+  img.field-image{
+    height: 100px;
+    object-fit: contain;
+    margin-top: 50px;
+    }
+  
 }
 .content_text_edit{
   overflow: scroll;
@@ -76,8 +88,11 @@ margin: 50px auto;
 }
 
 .image_submit{
-  margin: 0 46%;
+  margin: 0 40%;
 }
+
+
+
 .text_submit{
   display: inline-block;
   position: relative;
