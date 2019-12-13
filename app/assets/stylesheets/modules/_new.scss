@@ -52,7 +52,7 @@ margin: 50px auto;
   p{
     color: azure;
     display: inline-block;
-    margin-left: 150px;
+    margin-left: 50px;
   }
 
   img.field-image{
@@ -75,6 +75,11 @@ margin: 50px auto;
 .image_field{
   margin: 0 160px;
   display: none;
+}
+
+#img_field{
+  height: 100%;
+  width: 100%;
 }
 
 .image_submit{

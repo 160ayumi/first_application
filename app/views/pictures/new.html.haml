@@ -3,18 +3,18 @@
 .content_new
   .content_name
     = image_tag 'picture_name.png'
-  %label
-    = form_with(model: @picture, local: true) do |f|
-      .content_picture
+  = form_with(model: @picture, local: true) do |f|
+    .content_picture
+      %label
         #img_field{onclick: "$('#file').click()"}
           -if @picture.image.url.present?
             =image_tag(@picture.image.url)
           -else
             = image_tag 'picture.png', class: 'field-image'
-            %p クリックして画像を投稿してください
+            %p クリックして画像を投稿してください(.jpg/.jpeg/.gifのファイル)
         =f.file_field :image ,class: 'image_field',id: 'file'
-      - if @picture.errors[:image].any? 
-        = render 'layouts/picture_error'
-      .text_submit-btn
-        = f.hidden_field :hogehoge_image_cache
-        = f.submit "SEND",class:'image_submit'
+    - if @picture.errors[:image].any? 
+      = render 'layouts/picture_error'
+    .text_submit-btn
+      = f.hidden_field :hogehoge_image_cache
+      = f.submit "SEND",class:'image_submit'
