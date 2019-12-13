@@ -51,7 +51,7 @@ margin: 50px auto;
 }
 .content_picture{
   overflow: scroll;
-  height: 50px;
+  height: 300px;
   width: 50%;
   background: white;
   margin: 0 auto ;
@@ -72,6 +72,7 @@ margin: 50px auto;
 
 .image_field{
   margin: 0 160px;
+  display: none;
 }
 
 .image_submit{
