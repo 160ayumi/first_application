@@ -14,7 +14,9 @@ $(function(){
           src: e.target.result,
           width: "100%",
           class: "preview",
-          title: file.name
+          title: file.name,
+          // background: "url(@picture.image.url)",
+          
         }));
       };
     })(file);
