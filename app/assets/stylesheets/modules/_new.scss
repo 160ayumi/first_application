@@ -81,6 +81,9 @@ margin: 50px auto;
   height: 100%;
   width: 100%;
 }
+.preview{
+  object-fit: contain;
+}
 
 .image_submit{
   margin: 0 40%;
