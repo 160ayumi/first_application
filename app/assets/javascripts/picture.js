@@ -6,7 +6,7 @@ $(function(){
     file = e.target.files[0]
     reader = new FileReader(),
     $preview = $("#img_field");
- 
+
     reader.onload = (function(file) {
       return function(e) {
         $preview.empty();
@@ -15,11 +15,11 @@ $(function(){
           width: "100%",
           class: "preview",
           title: file.name,
-          // background: "url(@picture.image.url)",
           
         }));
-      };
+      };     
     })(file);
     reader.readAsDataURL(file);
   });
 });
+
