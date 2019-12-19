@@ -5,5 +5,6 @@ root to: 'tweets#index'
   resources :users
   resources :tweets
   resources :pictures
+  resources :comments
   
 end
