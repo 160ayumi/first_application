@@ -16,4 +16,8 @@
   .contents_show__comments
     .contents_show__comments__title
       ＜コメント一覧＞
+      -if @comments
+        -@comments.each do |comment|
+          .contents_show__comments__comment
+            = comment.text
       
