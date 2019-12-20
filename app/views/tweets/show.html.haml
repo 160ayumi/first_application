@@ -1,0 +1,23 @@
+.header
+  =render 'header'
+.contents_show
+  .contents_show__tweet
+    -if current_user.id == @tweet.user_id
+      =link_to "/tweets/#{@tweet.id}/edit" do
+        = @tweet.text
+    -else
+      = @tweet.text
+  = form_with(model: @comment, url: tweet_comments_path(@tweet), method: :post, local: true) do |f|
+    .contents_show__comment
+      .comment_text
+        = f.text_area :text
+      .comment_submit-btn
+        = f.submit "コメントする"
+  .contents_show__comments
+    .contents_show__comments__title
+      ＜コメント一覧＞
+      -if @comments
+        -@comments.each do |comment|
+          .contents_show__comments__comment
+            = comment.text
+      

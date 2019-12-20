@@ -8,6 +8,7 @@ class TweetsController < ApplicationController
 
   def new
     @tweet = Tweet.new
+
   end
   
   def create
@@ -20,6 +21,7 @@ class TweetsController < ApplicationController
   end
   
   def show
+    @comments = @tweet.comments.includes(:user)
   end
 
   def edit
