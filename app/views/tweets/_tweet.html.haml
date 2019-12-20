@@ -7,8 +7,9 @@
         = simple_format(tweet.text)
 -else
   .post-box
-    .post-box__left
-      ●
-    .post-box__text
-      = simple_format(tweet.text)
-        
+    =link_to "/tweets/#{tweet.id}" do
+      .post-box__left
+        ●
+      .post-box__text
+        = simple_format(tweet.text)
+          

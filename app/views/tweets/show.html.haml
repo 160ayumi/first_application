@@ -2,7 +2,11 @@
   =render 'header'
 .contents_show
   .contents_show__tweet
-    = @tweet.text
+    -if current_user.id == @tweet.user_id
+      =link_to "/tweets/#{@tweet.id}/edit" do
+        = @tweet.text
+    -else
+      = @tweet.text
   = form_with(model: @comment, url: tweet_comments_path(@tweet), method: :post, local: true) do |f|
     .contents_show__comment
       .comment_text
