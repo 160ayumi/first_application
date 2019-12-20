@@ -3,8 +3,8 @@
 .contents_show
   .contents_show__tweet
     = @tweet.text
-  .contents_show__comment
-    = form_with(model: @comments, local: true) do |f|
+  = form_with(model: @comment, url: tweet_comments_path(@tweet), method: :post, local: true) do |f|
+    .contents_show__comment
       .comment_text
         = f.text_area :text
       .comment_submit-btn
@@ -12,5 +12,4 @@
   .contents_show__comments
     .contents_show__comments__title
       ＜コメント一覧＞
-    .contents_show__comments__comment
-      ◯◯さん: コメント
+      
