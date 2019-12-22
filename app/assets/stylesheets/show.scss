@@ -13,6 +13,8 @@
   border-bottom: 5px dashed rgb(219, 181, 181);
   font-size: 20px;
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  white-space: pre-line;
+  word-break: break-word;
   }
 
   &__comment{
@@ -32,8 +34,10 @@
       color: darkgrey;
     }
     &__comment{
-      margin: 30px 10px;
-      border-bottom: 3px solid rgb(219, 181, 181);
+      margin: 0 10px;
+      white-space: pre-line;
+      word-break: break-word;
+      border-bottom: 3px solid rgb(218, 193, 193);
     }
   }
 }
