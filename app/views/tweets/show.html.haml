@@ -7,7 +7,7 @@
         = @tweet.text
     -else
       = @tweet.text
-  = form_with(model: @comment, url: tweet_comments_path(@tweet), method: :post, local: true) do |f|
+  = form_with(model: @comment, url: tweet_comments_path(@tweet), method: :post, id: 'new_comment', local: true) do |f|
     .contents_show__comment
       .comment_text
         = f.text_area :text
