@@ -21,6 +21,7 @@ $('#new_comment').on('submit', function(e){
       var html = buildHTML(data);
       $('.contents_show__comments__title').append(html);      
       $('form')[0].reset();
+      $('.comment_btn').prop('disabled', false);
     })
   })
 });
