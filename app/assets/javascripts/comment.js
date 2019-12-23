@@ -11,7 +11,7 @@ $('#new_comment').on('submit', function(e){
   var url = $(this).attr('action')
   $.ajax({
     url: url,
-    type: 'POST',
+    type: "POST",
     data: formData,
     dataType: 'json',
     processData: false,
@@ -20,8 +20,14 @@ $('#new_comment').on('submit', function(e){
     .done(function(data){
       var html = buildHTML(data);
       $('.contents_show__comments__title').append(html);      
-      $('form')[0].reset();
-      $('.comment_btn').prop('disabled', false);
+      $('.comment_textarea').val('');
     })
+    .always(() => {
+      $('.comment_btn').removeAttr("disabled")
+    })
+    .fail(function() {
+      alert("メッセージを入力してください");
+     
+  });
   })
 });

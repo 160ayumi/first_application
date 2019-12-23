@@ -10,7 +10,7 @@
   = form_with(model: @comment, url: tweet_comments_path(@tweet), method: :post, id: 'new_comment', local: true) do |f|
     .contents_show__comment
       .comment_text
-        = f.text_area :text
+        = f.text_area :text, class:'comment_textarea',placeholder: "コメントを入力して下さい"
       .comment_submit-btn
         = f.submit "コメントする",class: 'comment_btn'
   .contents_show__comments
