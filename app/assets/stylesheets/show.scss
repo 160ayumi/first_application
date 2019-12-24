@@ -28,6 +28,7 @@
     margin-bottom: 50px;
     
     &__title{
+      padding: 50px;
       min-height: 100px;
       margin: 20px 150px;
       font-weight: bolder;
@@ -45,7 +46,6 @@
 }
 .comments_show{
   font-family:'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
-    margin: 10px 10px;
 }
 .contents_show__tweet:hover{
   cursor: pointer;
