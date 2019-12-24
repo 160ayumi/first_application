@@ -6,8 +6,7 @@
   padding-bottom: 70px;
 
   &__tweet  {
-  margin: 50px auto;
-  width: 80%;
+  margin: 50px 150px;
   min-height: 100px;
   border-top: 5px dashed rgb(219, 181, 181);
   border-bottom: 5px dashed rgb(219, 181, 181);
@@ -15,10 +14,10 @@
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   white-space: pre-line;
   word-break: break-word;
+  color: darkgrey;
   }
 
   &__comment{
-    border-bottom: 5px dashed rgb(219, 181, 181);
     width: 80%;
     margin: auto;
    
@@ -26,21 +25,29 @@
 
   &__comments{
     font-family:'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
-    border-bottom: 5px dashed rgb(219, 181, 181);
     margin-bottom: 50px;
+    
     &__title{
+      min-height: 100px;
       margin: 20px 150px;
       font-weight: bolder;
       color: darkgrey;
+      border: 5px solid rgb(218, 193, 193);
     }
     &__comment{
-      margin: 0 10px;
+      margin: 0 20px 20px;
       white-space: pre-line;
       word-break: break-word;
       border-bottom: 3px solid rgb(218, 193, 193);
     }
   }
 }
+.contents_show__tweet:hover{
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  
+}
+
 .comment_text{
   margin: auto;
   width: 800px;
