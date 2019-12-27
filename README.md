@@ -31,11 +31,8 @@ Things you may want to cover:
 |email|integer|null: false, foreign_key: true|
 |password|integer|null: false, foreign_key: true|
 
-
-
 ### Association
 has_many :tweets
-has_many :pictures
 
 ## tweetsテーブル
 
@@ -46,6 +43,7 @@ has_many :pictures
 
 ### Association
 belongs_to :user
+has_many :comments
 
 ## picturesテーブル
 
@@ -54,7 +52,19 @@ belongs_to :user
 |image|text||
 
 ### Association
+
+## commentsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|text|text||
+|user_id|integer|null: false, foreign_key: true|
+|tweet_id|integer|null: false, foreign_key: true|
+
+### Association
 belongs_to :user
+belongs_to : tweet
+
 
 
 
