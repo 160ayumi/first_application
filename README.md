@@ -32,7 +32,7 @@ Things you may want to cover:
 |password|integer|null: false, foreign_key: true|
 
 ### Association
-has_many :tweets
+- has_many :tweets
 
 ## tweetsテーブル
 
@@ -42,8 +42,8 @@ has_many :tweets
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
-belongs_to :user
-has_many :comments
+- belongs_to :user 
+- has_many :comments
 
 ## picturesテーブル
 
@@ -62,8 +62,8 @@ has_many :comments
 |tweet_id|integer|null: false, foreign_key: true|
 
 ### Association
-belongs_to :user
-belongs_to : tweet
+- belongs_to :user
+- belongs_to : tweet
 
 
 
