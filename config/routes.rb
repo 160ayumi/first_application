@@ -7,5 +7,6 @@ root to: 'tweets#index'
     resources :comments, only: [:create]
   end
   resources :pictures
+  resources :events, only: [:index]
   
 end

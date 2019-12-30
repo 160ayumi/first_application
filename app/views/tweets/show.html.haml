@@ -1,6 +1,8 @@
 .header
   =render 'header'
 .contents_show
+  .contents_show__calender
+    #calendar
   .contents_show__tweet
     -if current_user.id == @tweet.user_id
       =link_to "/tweets/#{@tweet.id}/edit" do
