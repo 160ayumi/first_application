@@ -18,8 +18,7 @@ $(document).ready(function(){
               alert('イベントリスト!');
           }
       }
-    },
-    events: 'https://calendar.google.com/calendar/b/1/r?tab=wc1'
+    }
 
   });
 });
