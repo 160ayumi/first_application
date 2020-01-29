@@ -70,4 +70,12 @@ gem 'devise'
 gem 'haml-rails'
 gem 'kaminari'
 gem 'carrierwave'
+<<<<<<< Updated upstream
 gem 'mini_magick'
+=======
+gem 'mini_magick'
+gem 'jquery-rails'
+gem 'font-awesome-rails'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+>>>>>>> Stashed changes
